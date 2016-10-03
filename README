@@ -1,0 +1,12 @@
+I place this in a created temp directory of the development version of pymatgen, usually in the top directory.
+There used to be a scripts directory I would put it in.
+Edit line 123 of pymatgen GUI to point to the location of the cli directory that contains pmg (python material genie). This is
+rough code that represent ongoing development of new functionalities.  It has been put up due to requests
+on using the VASP/FEFF DOS comparison function.  To use this enter the Materials Project database number for
+the structure you are interested in into the Get Structure entry box, for example type mp-19128 for CoO and press the button.
+The MP structure should be printed in the text window.  You will have to make sure the MP database entry contains the DOS.
+Many do not. Then press the Plot button on the left and select "Compare Occupied DOS with MP database file".  Browse to
+locate your FEFF dos files, i.e., ldos00.dat, ldos01.dat etc.  click on the ldos00.dat file and open it.  Hopefully it 
+will work and you should see a plot of the DOS comparison and some data printed in the text window.
+
+Alan Dozier
